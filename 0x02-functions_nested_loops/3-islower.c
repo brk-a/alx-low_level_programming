@@ -2,8 +2,8 @@
 
 /**
  * _islower - check for lowercase
- * Decsription: check if  an ascii character is in lowercase (range 97 to 122 inclusive)
- *
+ * Decsription: see if an ascii character is in the range 97 to 122 inclusive
+ *@i:counter
  * Return: 1 if lowercase 0 otherwise
  */
 

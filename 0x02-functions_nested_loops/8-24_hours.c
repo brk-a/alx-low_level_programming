@@ -14,7 +14,7 @@ int hours_tens, hours_ones, minutes_tens, minutes_ones, hours_max;
 
 hours_max = 58;
 hours_tens = '0';
-while (hours_tens < '3') /* Thirty-something hrs is pointless in the 24h clock sys*/
+while (hours_tens < '3') /* 30-odd hrs is pointless in the 24h clock sys*/
 {
 if (hours_tens == '2')
 {
@@ -27,7 +27,7 @@ minutes_tens = '0';
 while (minutes_tens < '6')
 {
 minutes_ones = '0';
-while (minutes_ones < 58) /* Last digit of minutes should never go past ASCII 57*/
+while (minutes_ones < 58) /* Last digit of mins should never go past ASCII 57*/
 {
 _putchar(hours_tens);
 _putchar(hours_ones);
