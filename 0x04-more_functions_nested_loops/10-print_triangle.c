@@ -22,7 +22,7 @@ for (j = n - 1; j > i; j--)
 {
 _putchar(32);
 }
-for (k = 0; k < i -1; k++)
+for (k = 0; k < i - 1; k++)
 {
 _putchar(35);
 }

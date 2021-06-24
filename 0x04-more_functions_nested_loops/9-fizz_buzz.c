@@ -4,7 +4,7 @@
 /**
  * main - take the fizz-buzz challenge
  *
- * Return: Always 0
+ * Return: Always void
  */
 
 int main(void)
