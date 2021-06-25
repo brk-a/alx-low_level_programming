@@ -14,15 +14,11 @@ while (i < 10)
 {
 while (j < 15)
 {
-if(j < 10)
-{
-_putchar(j + '0');   
-}
-else
+if(j >= 10)
 {
 _putchar((j / 10) + '0');
-_putchar((j % 10) + '0');
 }
+_putchar((j % 10) + '0');
 j++;
 }
 j = 0;
