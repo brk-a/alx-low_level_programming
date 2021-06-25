@@ -9,7 +9,8 @@
 
 void print_triangle(int size)
 {
-int i, j, k;
+int i = 0;
+int j, k;
 if (size <= 0)
 {
 _putchar(10);
@@ -18,11 +19,11 @@ else
 {
 while (i < size)
 {
-for (j = n - 1; j > i; j--)
+for (j = size - 1; j > i; j--)
 {
 _putchar(32);
 }
-for (k = 0; k < i - 1; k++)
+for (k = 0; k < i + 1; k++)
 {
 _putchar(35);
 }

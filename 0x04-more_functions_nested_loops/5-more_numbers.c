@@ -14,7 +14,15 @@ while (i < 10)
 {
 while (j < 15)
 {
-_putchar(j);
+if(j < 10)
+{
+_putchar(j + '0');   
+}
+else
+{
+_putchar((j / 10) + '0');
+_putchar((j % 10) + '0');
+}
 j++;
 }
 j = 0;
