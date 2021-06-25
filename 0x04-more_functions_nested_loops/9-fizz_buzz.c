@@ -9,7 +9,10 @@
 int main(void)
 {
 int i = 1;
+
 while (i < 101)
+{
+if (i != 100)
 {
 if ((i % 3 == 0) && (i % 5 == 0))
 {
@@ -28,6 +31,11 @@ else
 printf("%d", i);
 }
 putchar(32);
+}
+else
+{
+printf("Buzz");
+}
 i++;
 }
 putchar(10);
