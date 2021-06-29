@@ -22,8 +22,8 @@ num = num * 10 + (neg ? -(*s - '0') : (*s - '0'));
 else if (*s == '-')
 {
 neg = !neg;
-s++;
 }
+s++;
 }
 return (num);
 }
