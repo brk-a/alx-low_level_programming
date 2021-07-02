@@ -1,37 +1,21 @@
 #include "holberton.h"
-#include <string.h>
 
 /**
 *
+*@s: string
 *
-*
-*
+*Return char
 */
 
-char *rot13(char *)
-
+char *rot13(char *s)
 {
-char* word = *[1];
-int key = 13;
+char *s_tmp = s, anchor;
 
-/* all the letters in the first argument */
-for (int n = 0, len = strlen(word); n < len; n++)
+for (; *s; s++)
 {
-int currentLetter = word[n];
-
-char cipher = currentLetter + key;
-
-/* make sure the next letter isn't over 26 or it isn't a ascii letter */
-/* if it is, do %26 */
-if ((currentLetter - 'a') + key > 26)
-{
-key = (currentLetter - 'a') + key) % 26;
-cipher = 'a' + key;
+anchor = (*s >= 'A' && *s <= 'Z') * 'A' + (*s >= 'a' && *s <= 'z') * 'a';
+if (anchor)
+*s = (((*s - anchor) + 13) % 26) + anchor;
 }
-
-/* reset the key and do the next letter */
-key = 13;
-}
-}
-return (cipher);
+return (s_tmp);
 }

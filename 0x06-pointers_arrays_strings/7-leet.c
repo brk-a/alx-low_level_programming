@@ -8,21 +8,15 @@
 
 char *leet(char *s)
 {
-int i;
-
-for (i = 0; s[i] != '\0'; i++)
+char *s_tmp = s, htab[256] = {0}, *map = "A4a4E3e3O0o0T7t7L1l1";
+for (; *map; map += 2)
 {
-if (s[i] == 'a' || s[i] == 'A')
-s[i] = '4';
-if (s[i] == 'e' || s[i] == 'E')
-s[i] = '3';
-if (s[i] == 'o' || s[i] == 'O')
-s[i] = '0';
-if (s[i] == 't' || s[i] == 'T')
-s[i] = '7';
-if (s[i] == 'l' || s[i] == 'L')
-s[i] = '1';
+htab[(int)*map] = map[1];
+}
+for (; *s; s++)
+{
+*s = (htab[(int)*s] != 0) * htab[(int)*s] + (htab[(int)*s] == 0) * *s;
 }
 
-return (s);
+return (s_tmp);
 }
