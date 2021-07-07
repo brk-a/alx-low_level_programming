@@ -21,5 +21,5 @@ if (i * i > n)
 return (1);
 
 i += 1;
-return (is_prime_nubmer(n));
+return (is_prime_number(n));
 }
