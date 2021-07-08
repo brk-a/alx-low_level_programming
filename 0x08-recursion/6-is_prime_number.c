@@ -10,7 +10,7 @@
 
 int prime_check(int x, int y)
 {
-return (x > y ? 1 : y % x && prime_check(x + 1, y));
+return (x > y ? 1 : y % x != 0 && prime_check(x + 1, y));
 }
 
 
@@ -24,5 +24,5 @@ return (x > y ? 1 : y % x && prime_check(x + 1, y));
 
 int is_prime_number(int n)
 {
-return (n < 2 ? 0 : prime_check(2,n));
-} 
+return (n < 2 ? 0 : prime_check(2, n));
+}
