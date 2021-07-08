@@ -10,16 +10,19 @@
 
 int is_prime_number(int n)
 {
+return (n < 2 ? 0 : prime_check(2,n));
+}
 
-int i = 2;
 
-if (n <= 2)
-return ((n == 2) ? 1 : 0);
-if (n % i == 0)
-return (1);
-if (i * i > n)
-return (0);
+/**
+* prime_check - checks for any factor of y starting from x
+* @x: start point
+* @y: number to check
+*
+*Return: 1 if y is prime, 0 otherwise
+*/
 
-i += 1;
-return (is_prime_number(n));
+char prime_check(int x, int y)
+{
+return (x > y ? 1 : y % x && prime_check(x + 1, y));
 }
