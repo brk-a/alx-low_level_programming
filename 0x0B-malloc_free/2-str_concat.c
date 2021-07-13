@@ -32,7 +32,7 @@ length2++;
 
 length3 = length1 + length2;
 
-arr = (char*) malloc(length3 * sizeof(char) + 1);
+arr = (char *) malloc(length3 *sizeof(char) + 1);
 
 if (arr == NULL)
 return (NULL);

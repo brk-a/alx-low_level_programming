@@ -5,7 +5,7 @@
  * create_array - creates arr of chars
  * @size: size of arr
  * @c: char to initialise arr with
- * Return: NULL if size = 0, pointer to array, otherwise
+ * Return: NULL if size = 0, ptr to arr otherwise
  */
 
 char *create_array(unsigned int size, char c)
@@ -13,7 +13,7 @@ char *create_array(unsigned int size, char c)
 unsigned int i;
 char *arr;
 
-arr = (char*) malloc(size * sizeof(char));
+arr = (char *) malloc(size * sizeof(char));
 if (arr == NULL)
 return (NULL);
 
