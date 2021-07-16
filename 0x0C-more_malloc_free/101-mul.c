@@ -3,14 +3,14 @@
 #include <stdio.h>
 
 /**
- *is_number - checks if input is composed of digits
+ *is_num - checks if input is composed of digits
  *
  *@s: input
  *
  *Return: 1 if n is num, 0 otherwise
  */
 
-int is_number(char *s)
+int is_num(char *s)
 {
 int i;
 
