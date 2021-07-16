@@ -15,7 +15,7 @@ int *arr, diff, num, j;
 if (min > max)
 return (NULL);
 diff = max - min + 1;
-arr = malloc(diff * sizeof(int));
+arr = malloc(diff *sizeof(int));
 if (arr == NULL)
 return (NULL);
 
