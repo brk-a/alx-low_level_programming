@@ -45,7 +45,7 @@ return (1);
 int mul(int argc, char *argv[])
 {
 
-if ((argc != 3) || !(is_num(argv[1]) && is_num(argv[2]))
+if ((argc != 3) || !(is_num(argv[1]) && is_num(argv[2])))
 {
 printf("Error\n");
 exit(98);
