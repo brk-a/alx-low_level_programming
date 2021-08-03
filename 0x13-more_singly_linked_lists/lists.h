@@ -35,3 +35,4 @@ size_t print_listint_safe(const listint_t *head);
 
 listint_t *find_listint_loop(listint_t *head);
 #endif
+listint_t *create_node(const int n);
