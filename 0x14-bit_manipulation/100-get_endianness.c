@@ -1,14 +1,14 @@
+#include "main.h"
 #include <stdio.h>
+
 /**
  * get_endianness - Checks the sys byte order
  * Return: Returns 0 if big endian 1 if wee endian
  */
 int get_endianness(void)
 {
-int x;
-int wee_or_big;
+unsigned int i = 1;
+char *c = (char*)&i;
 
-x = 1;
-wee_or_big = (int) (((char *)&x)[0]);
-return (wee_or_big);
+return (*c ? 1 : 0);
 }
