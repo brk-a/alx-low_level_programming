@@ -1,8 +1,7 @@
 #include <stdio.h>
-#include "main.h"
 /**
  * get_endianness - Checks the sys byte order
- * Return: Returns 0 if big endian 1 if lil endian
+ * Return: Returns 0 if big endian 1 if wee endian
  */
 int get_endianness(void)
 {
