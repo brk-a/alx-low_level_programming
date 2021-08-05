@@ -1,10 +1,10 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * get_endianness - Checks the sys byte order
  * Return: 0 if big endian, 1 if wee endian
  */
+
 int get_endianness(void)
 {
 unsigned int i = 1;
