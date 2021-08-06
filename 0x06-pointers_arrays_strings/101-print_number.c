@@ -1,6 +1,8 @@
 #include "holberton.h"
 #include <math.h>
 
+int printDigit(int N);
+
 /**
 *print_number: print out an integer
 *printDigit : print an int
