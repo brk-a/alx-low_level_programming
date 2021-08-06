@@ -7,7 +7,7 @@
 * Return: 0 if no match, 1 otherwise
 */
 
-char _strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
 
 int i = 0, arr[1000] = {0}, *ptr, sum = 0;
