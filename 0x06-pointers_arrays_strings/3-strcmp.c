@@ -13,16 +13,16 @@ int _strcmp(char *s1, char *s2)
 int i = 0, arr[1000] = {0}, *ptr, sum = 0;
 ptr = &sum;
 
-while (*(s + i) != '\0')
+while (*(s2 + i) != '\0')
 {
 arr[i] = (*(s1 + i) == *(s2 + i)) ? 1 : 0;
 i++;
 }
 
-for (; i => 0; i--)
+for (; i >= 0; i--)
 {
-sum += arr[i];
+*ptr += arr[i];
 }
 
-return ((sum == 0) ? 0 : 1);
+return ((*ptr == 0) ? 0 : 1);
 }
