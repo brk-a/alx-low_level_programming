@@ -44,7 +44,7 @@ if (carry)
 *r = '\0', r = r_tmp;
 for (i = 0; i < len / 2; i++)
 {
-rev_tmp = r[i], r[i] = r[len - i - 1], r[len - i 0 1] = rev_tmp;
+rev_tmp = r[i], r[i] = r[len - i - 1], r[len - i - 1] = rev_tmp;
 }
 return (r_tmp);
 }
