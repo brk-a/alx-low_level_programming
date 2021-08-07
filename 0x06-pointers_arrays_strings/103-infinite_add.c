@@ -10,7 +10,7 @@
 */
 
 
-char *infinite_add(char *n1, char *n2, char *r, int size_r);
+char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 register char rev_tmp, *r_tmp = r, carry = 0, n1_t, n2_t, n_sum, n1_d, n2_d;
 register int i, len, n1_len = 0, n2_len = 0;
