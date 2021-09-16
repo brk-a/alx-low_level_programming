@@ -16,11 +16,11 @@ unsigned int i = 0;
 
 if (head == NULL)
 {
-return NULL;
+return (NULL);
 }
 
 temp = head;
-while(head)
+while (head)
 {
 if (i == index)
 {

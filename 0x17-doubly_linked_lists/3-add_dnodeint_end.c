@@ -17,7 +17,7 @@ dlistint_t *temp;
 new = malloc(sizeof(dlistint_t));
 if (new == NULL)
 {
-return NULL;
+return (NULL);
 }
 
 new->next = NULL;
@@ -31,7 +31,7 @@ return (*head);
 }
 
 temp = *head;
-while(temp->next)
+while (temp->next)
 {
 temp = temp->next;
 }

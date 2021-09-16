@@ -44,7 +44,7 @@ return (NULL);
 
 if (id == 0)
 {
-return (add_dnodeint(h , n));
+return (add_dnodeint(h, n));
 }
 
 len = dlistint_len(*h);
