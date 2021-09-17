@@ -22,7 +22,7 @@ temp = head;
 while (temp)
 {
 sum += temp->n;
-head = temp->next;
+temp = temp->next;
 }
 return (sum);
 }

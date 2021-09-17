@@ -32,7 +32,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 
 dlistint_t *temp;
-size_t len;
+size_t length;
 unsigned int i = 0;
 
 if (head == NULL || *head == NULL)
