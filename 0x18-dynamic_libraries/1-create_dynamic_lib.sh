@@ -1,0 +1,2 @@
+#!bin/bash
+gcc -shared -Wl,-soname,libdynamic.so -o libdynamic.so *.o
