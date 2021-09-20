@@ -1,2 +1,2 @@
 #!bin/bash
-gcc -shared -Wl,-soname,libdynamic.so -o libdynamic.so *.o
+gcc -Wall -shared -fPIC -Wl,-soname,liball.so -o liball.so *.c
