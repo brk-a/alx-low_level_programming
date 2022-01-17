@@ -8,3 +8,7 @@
 /**
  *header file for 0x1E. C: Search Algos
 */
+
+//function declarations will go here
+
+#endif
