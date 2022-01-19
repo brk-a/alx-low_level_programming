@@ -34,29 +34,29 @@ int bin_search_mod(int *array, size_t size, int value, int first, int last)
 {
 size_t mid = 0;
 
-if (array == NULL || size == 0)                                                                             
-return (-1);                                                                                        
-                                                                                                                    
-while (first <= last)                                                                                       
-{                                                                                                           
-print_subarray(array, first, last);                                                                 
-mid = (first + last) / 2;                                                                           
+if (array == NULL || size == 0)
+return (-1);
+
+while (first <= last)
+{
+print_subarray(array, first, last);
+mid = (first + last) / 2;
 if (array[mid] > value)
 {
-last = mid - 1;                                                                             
+last = mid - 1;
 }
-else if (array[mid] < value)                                                                        
+else if (array[mid] < value)
 {
-first = mid + 1;                                                                            
+first = mid + 1;
 }
 else
 {
 return (mid);
 }
-}                                                                                                           
-return (-1);                                                                                                
-}                                                                                                                   
-                                                                                                                    
+}
+return (-1);
+}
+
 /**
 * exponential_search - searches for a val in a sorted arr of
 * ints using the Exponential search algo
