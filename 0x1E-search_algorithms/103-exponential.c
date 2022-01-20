@@ -93,3 +93,4 @@ last = size - 1;
 }
 printf("Value found between indexes [%d] and [%d]\n", first, last);
 return (bin_search_mod(array, size, value, first, last));
+}
